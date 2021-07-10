@@ -29,8 +29,8 @@ class _SearchResultScreenState extends State<SearchResultScreen> {
     });
 
     String finalSearch = search.replaceAll(" ", "%20");
-    String searchMovieUrl = "https://api.themoviedb.org/3/search/movie?api_key=357b5ea89158dc578395d5e4ed78f3bf&language=en-US&query=" + finalSearch + "&page=1&include_adult=false";
-    String searchShowUrl = "https://api.themoviedb.org/3/search/tv?api_key=357b5ea89158dc578395d5e4ed78f3bf&language=en-US&query=" + finalSearch + "&page=1&include_adult=false";
+    String searchMovieUrl = "https://api.themoviedb.org/3/search/movie?api_key={key}&language=en-US&query=" + finalSearch + "&page=1&include_adult=false";
+    String searchShowUrl = "https://api.themoviedb.org/3/search/tv?api_key={key}&language=en-US&query=" + finalSearch + "&page=1&include_adult=false";
 
     http.Response response1 =
         await http.get(Uri.parse(searchMovieUrl), headers: {"Accept": "application/json"});
