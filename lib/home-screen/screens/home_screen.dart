@@ -34,12 +34,12 @@ class _HomeScreenState extends State<HomeScreen> {
       isLoading = true;
     });
 
-    String trendingAllTodayUrl = "https://api.themoviedb.org/3/trending/all/day?api_key=357b5ea89158dc578395d5e4ed78f3bf";
-    String trendingMoviesTodayUrl = "https://api.themoviedb.org/3/trending/movie/day?api_key=357b5ea89158dc578395d5e4ed78f3bf";
-    String trendingShowsTodayUrl = "https://api.themoviedb.org/3/trending/tv/day?api_key=357b5ea89158dc578395d5e4ed78f3bf";
-    String trendingAllWeekUrl = "https://api.themoviedb.org/3/trending/all/week?api_key=357b5ea89158dc578395d5e4ed78f3bf";
-    String trendingMoviesWeekUrl = "https://api.themoviedb.org/3/trending/movie/week?api_key=357b5ea89158dc578395d5e4ed78f3bf";
-    String trendingShowsWeekUrl = "https://api.themoviedb.org/3/trending/tv/week?api_key=357b5ea89158dc578395d5e4ed78f3bf";
+    String trendingAllTodayUrl = "https://api.themoviedb.org/3/trending/all/day?api_key=3{key}";
+    String trendingMoviesTodayUrl = "https://api.themoviedb.org/3/trending/movie/day?api_key={key}";
+    String trendingShowsTodayUrl = "https://api.themoviedb.org/3/trending/tv/day?api_key={key}";
+    String trendingAllWeekUrl = "https://api.themoviedb.org/3/trending/all/week?api_key={key}";
+    String trendingMoviesWeekUrl = "https://api.themoviedb.org/3/trending/movie/week?api_key={key}";
+    String trendingShowsWeekUrl = "https://api.themoviedb.org/3/trending/tv/week?api_key={key}";
 
     http.Response response1 =
         await http.get(Uri.parse(trendingAllTodayUrl), headers: {"Accept": "application/json"});
