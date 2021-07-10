@@ -1,16 +1,9 @@
-# movies_and_more
+# Ratings and More
 
-A new Flutter project.
+Movie / TV Show ratings, info, etc. at your fingertips.
 
-## Getting Started
+## Description
 
-This project is a starting point for a Flutter application.
+Ratings and More uses The Movie Database(TMDb) to display all the details of Movies and TV Shows. You can also search your favorite title to check out its details, such as Cast, Release Date, Production Companies, and so on. The app also displays the trending titles and also lists out and recommends similar titles based on what you search.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
