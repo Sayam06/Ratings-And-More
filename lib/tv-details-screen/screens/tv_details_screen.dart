@@ -34,10 +34,10 @@ class _TvDetailsScreenState extends State<TvDetailsScreen> {
       isLoading = true;
     });
 
-    String movieDataUrl = "https://api.themoviedb.org/3/tv/" + id + "?api_key=357b5ea89158dc578395d5e4ed78f3bf&language=en-US";
-    String castDataUrl = "https://api.themoviedb.org/3/tv/" + id + "/credits?api_key=357b5ea89158dc578395d5e4ed78f3bf&language=en-US";
-    String recommendedMoviesUrl = "https://api.themoviedb.org/3/tv/" + id + "/recommendations?api_key=357b5ea89158dc578395d5e4ed78f3bf&language=en-US&page=1";
-    String similarMoviesUrl = "https://api.themoviedb.org/3/tv/" + id + "/similar?api_key=357b5ea89158dc578395d5e4ed78f3bf&language=en-US&page=1";
+    String movieDataUrl = "https://api.themoviedb.org/3/tv/" + id + "?api_key={key}&language=en-US";
+    String castDataUrl = "https://api.themoviedb.org/3/tv/" + id + "/credits?api_key={key}&language=en-US";
+    String recommendedMoviesUrl = "https://api.themoviedb.org/3/tv/" + id + "/recommendations?api_key={key}&language=en-US&page=1";
+    String similarMoviesUrl = "https://api.themoviedb.org/3/tv/" + id + "/similar?api_key={key}&language=en-US&page=1";
 
     http.Response response1 =
         await http.get(Uri.parse(movieDataUrl), headers: {"Accept": "application/json"});
