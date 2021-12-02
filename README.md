@@ -1,5 +1,7 @@
 # Ratings and More
 
+<img src = "/assets/images/Logo.png" width = 300>
+
 Movie / TV Show ratings, info, etc. at your fingertips.
 
 ## Description
